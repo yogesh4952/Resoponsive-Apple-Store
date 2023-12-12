@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#header{
+    width: 100%;
+    height: 100px; 
+   
+    
+   
+}
+.navbar{
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 900;
+    
+   
+}
+.navbar i{
+    font-size: 81px;
+}
+#navr a{
+  margin-right: 50px;
+  text-decoration: none;
+  color: black;
+}
+#navr button{
+    padding: 12px 13px;
+    margin-right: 15px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 250);
+    border: transparent;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+
+}
+
+#main{
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex; 
+    
+    
+    
+}
+#left{
+  
+   width: 55%;
+   height: 100%;
+   position: relative;
+  
+   
+   
+
+}
+#textcenter{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#left h1{
+    font-size: 67px;
+    color: #C84358;
+
+}
+#left h3{
+    font-size: 45px;
+}
+#left p{
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 20px 0;
+    opacity: .8;
+}
+#left button{
+    font-size: 15px;
+    padding: 12px 13px;
+    border-radius: 13px;
+    font-weight: 700;
+    background-color: #D2373D;
+    color: white;
+}
+
+#right{
+    height: 100%;
+    width: 45%;
+    background-image: url(https://images.unsplash.com/photo-1546868871-7041f2a55e12?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+
+}
+@media (max-width:500px) {
+    #navr{
+        font-size: 12px;
+        font-weight: 900;
+       
+        
+    }
+    #navr button{
+        font-size: 12px;
+        padding: 2px;
+        background-color: ;
+        
+    }
+    .navbar i{
+        font-size: 50px;
+
+
+    }
+    .navbar{
+        display: flex;
+       
+    }
+    #main{
+       
+        flex-direction: column;
+        /* margin-top: -50px; */
+       
+        /* margin-top: 20px; */
+        
+        
+    }
+  
+    #left{
+        width: 100%;
+       
+        
+    }
+    #right{
+        width: 100%;
+        height: 100%;
+    }
+    #left h1{
+        font-size: 50px;
+    }
+    #left h3{
+        font-size: 30px;
+    }
+    #left p{
+        font-size: 10px;
+    }
+    #left button{
+        font-size: 10px;
+    }
+    
+  
+    
+}
